@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-ojue
+  namespace: build-e2e-ccfq-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:a1d5c2d7b7aec57a8e05141dddbc55b7c7b10f316046eecedd3ad31bad6cb8a4
+        name: my-python
+        resources: {}
+status: {}
